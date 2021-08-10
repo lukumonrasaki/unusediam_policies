@@ -1,7 +1,7 @@
 import boto3
-from pprint import pprint
-iam_client = boto3.client('iam', aws_access_key_id="AKIA4BI6MA4YOFTMCMIT",
-                       aws_secret_access_key="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")
+#  When you create access key remember the key must have IAM full access
+iam_client = boto3.client('iam', aws_access_key_id="<put your access key>",
+                       aws_secret_access_key="<put your secret access key>")
 
 response = iam_client.list_policies(
     Scope='Local',
